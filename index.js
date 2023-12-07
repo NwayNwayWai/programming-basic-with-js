@@ -183,3 +183,134 @@ console.log(num > 4 && num == 1); //false && true=false
 let numo = 1;
 console.log(numo > 0 || numo == 1); //true && true=true
 console.log(numo > 4 || numo == 1); //false && true=true
+
+//function
+
+function shopping() {
+  console.log("go to shop");
+  console.log("buy a product");
+  console.log("go back home");
+}
+shopping();
+
+function shopping(product) {
+  //let product="pen"
+  console.log("go to shop");
+  console.log("buy a " + product); // buy a pen
+  console.log("go back home");
+}
+
+shopping("pen");
+
+function add(num1, num2) {
+  //console.log(num1 + num2);
+  return num1 + num2;
+}
+console.log(add(2, 5));
+
+let result = add(2, 5);
+console.log(result + 6);
+
+function sayName() {
+  console.log("Nway Nway Wai");
+}
+sayName();
+
+function sayName(name) {
+  console.log(name);
+}
+sayName("nway nway wai");
+
+function sayName(name, age) {
+  console.log(name, age);
+  return "h1";
+}
+let test = sayName("nway nway wai", 24);
+console.log(test);
+
+function sayName(name) {
+  return "hi";
+}
+let test1 = sayName("nnw");
+console.log(test1);
+
+function calculateage(birthyear) {
+  let age = 2021 - birthyear;
+  console.log(age);
+}
+calculateage(2000);
+
+//default parameter
+// let a=2
+// let b;
+function add(a, b = 0) {
+  console.log(a + b);
+}
+add(3, 7);
+
+//Rest Parameter
+
+function rest(a, b, ...c) {
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+rest(1, 2, 3, 4, 5);
+
+//function staatement
+
+function myName() {
+  console.log("Nway Nway Wai");
+}
+myName();
+
+//function expression
+
+let sayHi = function () {
+  console.log("hi there");
+};
+sayHi();
+
+let sayHi1 = function (word) {
+  console.log(word);
+};
+sayHi("Hello");
+
+//Callback function
+
+function sayMyName() {
+  console.log("Nway Nway Wai");
+}
+sayMyName();
+
+function sayMyName(name, fun) {
+  // console.log(name,fun);
+  fun("Nway");
+}
+sayMyName("Nway Nway Wai", function (name) {
+  console.log(name);
+});
+
+function sayMyName(name, fun) {
+  let result = fun(name);
+  console.log(result);
+}
+sayMyName("aung aung", function (name) {
+  return name;
+});
+
+//callback function
+
+function twice(num) {
+  let result = num * 2;
+  console.log(result);
+}
+twice(4);
+
+function twice(num, modifier) {
+  let result = modifier(num) * 2;
+  console.log(result);
+}
+twice(4, function (num) {
+  return num + 6;
+});
