@@ -595,7 +595,175 @@
 // });
 // console.log(filterdArray);
 
+// let searchKeyword = prompt("search people :");
+
 // let filterdArray = people.filter((person) => {
 //   return person.age < 18;
 // });
 // console.log(filterdArray);
+
+// let filterdArray1 = people.filter((person) => {
+//   return person.name.includes(searchKeyword);
+// });
+// console.log(filterdArray1);
+
+//JSON ''
+//string ,number,Boolean,,Array,Object,null
+
+// let person = '{"name" :"nway nway wai","age" : 20}';
+// let obj = JSON.parse(person);
+// console.log(obj.name);
+
+// let person = { name: "nway nway wai", age: 20 };
+// console.log(JSON.stringify(person));
+
+//conditions (if else)
+
+// let tired = prompt('are you tired? "yes/no" :');
+
+// if (tired === "yes") console.log("rest well");
+// else if (tired === "no") console.log("go back to work");
+// else console.log("pls enter yes or no");
+
+//if else example
+
+// let product_price = [100, 500, 100, 300, 700, 200, 100];
+
+// product_price = product_price.map((price) => {
+//   if (price === 100) price -= 30;
+//   return price;
+// });
+// console.log(product_price);
+
+// let people = [
+//   { name: "john", age: 25 },
+//   { name: "jane", age: 20, gender: "f" },
+//   { name: "jack", age: 40, gender: "m" },
+// ];
+
+// people = people.map((person) => {
+//   if (person.gender === "m") person.gender = "male";
+//   else if (person.gender === "f") person.gender = "female";
+//   else person.gender = "unknown";
+//   return person;
+// });
+// console.log(people);
+
+//if else expression( ternary operator)
+
+// let age = 20;
+// let permission = age > 18 ? "authorized" : "unauthorized";
+
+// if (age > 18) {
+//   permission = "authorized";
+// } else {
+//   permission = "unauthorized";
+// }
+// console.log(permission);
+
+//switch statement
+
+// switch (5) {
+//   case 1:
+//     console.log("one");
+//   case 2:
+//     console.log("two");
+//     break;
+//   case 3:
+//     console.log("three");
+//     break;
+//   default:
+//     console.log("this is default");
+// }
+
+// let people = [
+//   { name: "nway nway wai", age: 24, gender: "f" },
+//   { name: "nway nway ", age: 23 },
+//   { name: "wai", age: 18, gender: "m" },
+// ];
+// people = people.map((person) => {
+//   switch (person.gender) {
+//     case "m":
+//       person.gender = "male";
+//       break;
+//     case "f":
+//       person.gender = "female";
+//       break;
+//     default:
+//       person.gender = "unknown";
+//   }
+//   return person;
+// });
+// console.log(people);
+
+//whole loop
+
+// let x = 0;
+// while (x < 10) {
+//   console.log("hi");
+//   x++;
+// }
+
+// let people = ["mgmg", "aungaung", "kyawkyaw", "susu", "john"];
+// console.log(people[0]);
+// console.log(people[1]);
+// console.log(people[2]);
+// console.log(people[3]);
+
+// let x = 0;
+// while (x < people.length) {
+//   console.log(people[x]);
+//   x++;
+// }
+
+// do while loop
+// let x = 0;
+// do {
+//   console.log("work" + x);
+//   x++;
+// } while (x < 5);
+
+// //for loop
+// let people = ["mgmg", "aungaung", "kyawkyaw", "susu", "john"];
+// for (let x = 0; x < people.length; x++) {
+//   console.log(people[x]);
+// }
+
+// //for of loop
+
+// let people = ["mgmg", "aungaung", "kyawkyaw", "susu", "john"];
+
+// for (person of people) {
+//   console.log(person);
+// }
+
+// //for in loop
+
+// let person = {
+//   name: "nway wai",
+//   age: 24,
+// };
+// for (key in person) {
+//   console.log(person[key]);
+//   console.log(`${key} is ${person[key]}`);
+// }
+
+// for (key in people) {
+//   console.log(people[key]);
+// }
+
+//scoping
+
+// let x = 0; //global variable
+// console.log(x);
+// {
+//   let y = 1; //local variable
+//   console.log(y);
+//   console.log(x);
+// }
+
+// function test() {
+//   let y = 10;
+//   console.log(y);
+// }
+// test();
