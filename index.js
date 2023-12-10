@@ -767,3 +767,151 @@
 //   console.log(y);
 // }
 // test();
+
+// //OOP
+// class Car {
+//   wheels = 4;
+//   color = "black";
+
+//   drive() {
+//     console.log("car is driving");
+//   }
+// }
+// let car = new Car();
+// console.log(car.color);
+
+// let carTwo = new Car();
+// carTwo.color = "red";
+// console.log(carTwo.color);
+
+// //OOP Example
+
+// class Calculator {
+//   static PI = 3.14;
+//   plus(n1, n2) {
+//     return n1 + n2;
+//   }
+//   minus(n1, n2) {
+//     return n1 * n2;
+//   }
+//   division(n1, n2) {
+//     return n1 / n2;
+//   }
+//   remainder(n1, n2) {
+//     return n1 % n2;
+//   }
+// }
+// let calculator = new Calculator();
+// console.log(calculator.remainder(4, 2));
+// console.log(calculator.PI);
+// console.log(Calculator.PI);
+
+// class Calculator {
+//   static PI = 3.14;
+//   static area(r) {
+//     return 3.14 * r ** 2;
+//   }
+// }
+// console.log(Calculator.area(2));
+
+// class Calculator {
+//   PI = 3.14;
+//   area(r) {
+//     return this.PI * r ** 2;
+//   }
+//   volume(r, h) {
+//     return this.area(r) * h;
+//   }
+// }
+// let calculator = new Calculator();
+// console.log(calculator.area(2));
+// console.log(calculator.volume(2, 4));
+
+// class Calculator {
+//   PI = 3.14;
+//   Name = "casio";
+//   area(r) {
+//     return this.PI * r ** 2;
+//   }
+//   volume(r, h) {
+//     return this.area(r) * h;
+//   }
+//   static info() {
+//     let calculator = new Calculator();
+//     console.log("i am " + calculator.Name + " calculator");
+//   }
+// }
+// Calculator.info();
+// let calculator = new Calculator();
+// console.log(calculator.area(2));
+// console.log(calculator.volume(2, 4));
+
+// //OOP(constructor & access modifier)
+// class Car {
+//   Name = "";
+//   wheels = 4;
+//   constructor(name, wheels) {
+//     this.Name = name;
+//     this.wheels = wheels;
+//     this.drive();
+//     //     console.log(name + " is driving");
+//   }
+//   drive() {
+//     console.log(this.name + " is driving");
+//   }
+//   getWheels() {
+//     console.log(this.Name + " has " + this.wheels + " wheels");
+//   }
+// }
+// new Car("marcedes", 4);
+//  new Car("toyota");
+// let toyata = new Car("toyata", 10);
+// toyata.getWheels();
+
+//OOP (access modifier)(static public private protected)
+
+// //public & private
+// class Car {
+//   Name = "marcedes";
+//   #hp = 300;
+//   getHorsePower() {
+//     console.log("Horse Power is " + this.#hp);
+//   }
+// }
+// let car = new Car();
+// // console.log(car.Name);
+// // car.Name = "toyata";
+// // console.log(car.Name);
+// car.getHorsePower();
+
+// //OOP (inheritance)
+// class Animal {
+//   age = 1;
+//   constructor(name) {
+//     this.Name = name;
+//   }
+//   run() {
+//     console.log(`${this.Name} is running`);
+//   }
+// }
+// let dog = new Animal("dog");
+// console.log(dog);
+// dog.run();
+
+// class Dog extends Animal {
+//   bark() {
+//     console.log(this.Name + " woof woof");
+//   }
+// }
+// let dog = new Dog("Aung Nak");
+
+// dog.run();
+// dog.bark();
+
+// let animal = new Animal();
+// animal.age = 5;
+// console.log(animal.age);
+
+//public=> access anywhere
+//Private=> access only in own class
+//protected=> access only in own class and child class
