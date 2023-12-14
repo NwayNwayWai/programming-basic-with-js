@@ -915,3 +915,110 @@
 //public=> access anywhere
 //Private=> access only in own class
 //protected=> access only in own class and child class
+
+//Asynchrnous Javascript
+
+//sync way
+// console.log(1);
+// console.log(2);
+
+// //async way
+
+// console.log(1);
+// console.log(2);
+// setTimeout(() => {
+//   console.log(3);
+// }, 3000);
+// console.log(4);
+
+//promise
+
+// function synchronuus() {
+//   let result = 0;
+//   for (let i = 0; i < 1000000000; i++) {
+//     result += i;
+//   }
+//   return result;
+// }
+// console.log("work");
+// console.log(synchronuus());
+// console.log("more important work");
+
+// function Asynchrnous() {
+//   return new Promise((resolve, reject) => {
+//     let result = 0;
+//     for (let i = 0; i < 1000000000; i++) {
+//       //   result += i;
+//       result += i + undefined;
+//     }
+//     if (result) {
+//       resolve(result);
+//     } else {
+//       reject("i have got some error");
+//     }
+//     resolve(result);
+//   });
+// }
+// console.log("work");
+// Asynchrnous()
+//   .then((result) => {
+//     console.log(result);
+//     console.log("after async task");
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+// console.log("more important work");
+
+// //Fetch api
+
+// let userInput = prompt("Tell me user ID");
+// fetch("https://jsonplaceholder.typicode.com/todos/" + userInput)
+//   .then((response) => {
+//     //   console.log(response.json());
+//     return response.json();
+//     //   .catch((err) => {
+//     //     console.log(err);
+//     //   });
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// fetch("https://jsonplaceholder.typicode.com/todos/" + userInput)
+//   .then((response) => {
+//     return response.json();
+
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// async function fetchTodos() {
+//   try {
+//     let response = await fetch("https://jsonplaceholder.typicode.com/todos/");
+//     console.log("hi");
+//     // console.log(response)
+//     let data = await response.json();
+//     console.log(data);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
+// fetchTodos();
+
+//Coding Styles
+
+// //Nodejs intro
+// const { minus, add, PI } = require("./math");
+// console.log("hello");
+// // const add = require("./math");
+// console.log(add(1, 2));
+// // const minus = require("./math");
+// console.log(minus(1, 2));
